@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*** common styling ***/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0  15px;
+}
+section.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+img{
+    max-width: 100%;
+}
+.btn{
+     background-color: #ff0066;
+      color: #fff;
+      border-radius: 7px;
+      padding: 18px 36px;
+      font-size: 18px;
+      font-weight: 500;
+      display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+h1,.heading-1{
+    font-size:100px ;
+    font-weight: 400;
+    color:#001F51 ;
+    line-height: 1.2; 
+    margin-bottom:35px ;
+   /* width: 30%;*/
+
+}
+h2,.heading-2{
+  font-size: 24px;
+  font-weight: 500;
+  color: #001F51;
+  line-height: 1.1;
+  margin-bottom: 34px;
+}
+/* NAVBAR STYLING */
+.header{
+   padding: 30px 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 208.49px;
+    display: block;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+
+}
+.nav-links li{
+    list-style-type: none;
+    margin: 15px;
+}
+.nav-links li a{
+    color: #001F51;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-links .active{
+    color: #940F14;
+}
+.nav-btn{
+    padding: 18.5px 30.5px;
+    background-color: #001F51;
+
+}
+/* BANNER SECTION STYLING */
+.banner-section{
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: url(/image/image\ 2.png) no-repeat center center/cover;
+}
+.banner-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box p{
+    font-size: 18px;
+    color: #001F51;
+    margin-bottom: 35px;
+    max-width: 571px;
+
+}
+.bnner-btn{
+    background-color: #D00000;
+    padding: 18.5px 36.5px;
+    border-radius: 8px;
+}
+.form-box{
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 468px;
+    width: 100%;
+
+}
+.form-box h2{
+  text-align: center;
+}
+.form-row{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #B8B8B8;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+textarea{
+  resize: none;
+  
+}
+.btn-submit{
+  background-color: #D00000;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+/*** banner section responsive styling***/
+@media(max-width:768px){
+  .banner-content{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-box h1{
+    font-size: 32px;
+
+  }
+  .form-row{
+    flex-direction: column;
+  }
+  .bnner-btn{
+    margin-bottom: 20px;
+  }
+  
+}
+
+/* ABOUT SECTION STYLING  */
+.about-section{
+    padding: 100px 0;
+}
+.parent{
+    display: flex;
+    justify-content: space-between
+}
+.heading{
+    color: #D00000;
+}
+.image-area{
+    width:50% ;
+    padding: 0 15px;
+}
+.content-about-area{
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.heading-two{
+    margin-bottom: 37px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #001F51;
+
+}
+.high-light{
+    margin-bottom: 37px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #000000;
+}
+.about-btn{
+    background-color: #001F51;
+}
+.parent{
+    margin: 0 -15px;
+}
+/*** LOAN SECTION STYLING ***/
+.loan-section{
+  padding: 40px 20px;
+  text-align: center;
+}
+.loan-heading{
+  color: #D00000;
+}
+.loan-section h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: #001F51;
+}
+.loan-section.description{
+  color: #000000;
+  max-width: 777px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.card-parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.card{
+  width: 33.3%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.card-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+//***
+question 1  jodi templete a banner section er width 1456px hoi tahole min-width koto nebo ?
+/* banner section h1 ke split korar jonno br dite holo kno ?  */
+/* banner form er vitor gap use korte hoya6he margine implimant korte parini */
+/* nav menu te margin 35px dile niche as6he kno ? templete a gaping 35px a6he*/
